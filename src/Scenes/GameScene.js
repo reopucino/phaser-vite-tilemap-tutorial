@@ -24,8 +24,12 @@ export default class GameScene extends Phaser.Scene {
     ];
 
     // When loading from an array, make sure to specify the tileWidth and tileHeight
-    const map = this.make.tilemap({ data: level, tileWidth: 64, tileHeight: 64 });
-    const tiles = map.addTilesetImage('tilesheet');
-    const layer = map.createLayer(0, tiles, 0, 0);
+    // const map = this.make.tilemap({ data: level, tileWidth: 64, tileHeight: 64 });
+    // const tiles = map.addTilesetImage('tilesheet');
+    // const layer = map.createLayer(0, tiles, 0, 0);
+
+    const otherlevel = this.make.tilemap({ key: "tilemap" });
+    const tilesSheet = otherlevel.addTilesetImage('tilesheet');
+    otherlevel.createLayer(0, tilesSheet, 0, 0);
   }
 }
