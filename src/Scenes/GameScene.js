@@ -31,5 +31,20 @@ export default class GameScene extends Phaser.Scene {
     const otherlevel = this.make.tilemap({ key: "tilemap" });
     const tilesSheet = otherlevel.addTilesetImage('tilesheet');
     otherlevel.createLayer(0, tilesSheet, 0, 0);
+
+    this.add.image(0, 0, "player");
+
+    this.input.keyboard.on("keydown-RIGHT", () => {
+      console.log("move right");
+    })
+    this.input.keyboard.on("keydown-LEFT", () => {
+      console.log("move left");
+    })
+    this.input.keyboard.on("keydown-UP", () => {
+      console.log("move up");
+    })
+    this.input.keyboard.on("keydown-DOWN", () => {
+      console.log("move down");
+    })
   }
 }
