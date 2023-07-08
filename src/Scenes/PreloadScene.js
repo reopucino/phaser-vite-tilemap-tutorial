@@ -7,6 +7,8 @@ export default class PreloadScene extends Phaser.Scene {
   preload() {
     this.load.svg("vite", "vite.svg");
     this.load.svg("js", "javascript.svg");
+
+    this.load.image("tilesheet", "img/platformpack_tilesheet.png");
     //this.load.setBaseURL("https://labs.phaser.io");
     this.load.image(
       "logo",
