@@ -1,0 +1,92 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "level1.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 0.25
+        },
+        "level1.json": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 484.6666666666666,
+                "y": 503.99999999999994
+            }
+        },
+        "level1.json#tilesheet": {
+            "scaleInDock": 1
+        },
+        "level1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 546.5,
+                "y": 246.5
+            }
+        },
+        "level1.tmx#tilesheet": {
+            "scaleInDock": 0.25,
+            "scaleInEditor": 1
+        },
+        "level2.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 453,
+                "y": 185
+            }
+        },
+        "level2.tmx#tilesheet": {
+            "scaleInDock": 0.25
+        },
+        "public/level1.json": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 519.3333333333334,
+                "y": 277.99999999999994
+            }
+        },
+        "public/level1.json#tilesheet": {
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        },
+        "tilesheet.tsx": {
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "D:/documents-save/phaser-project/youtube-tutorial/tiled-tutorial-vite/public",
+    "last.imagePath": "D:/documents-save/phaser-project/youtube-tutorial/tiled-tutorial-vite/public/img",
+    "map.fixedSize": true,
+    "map.height": 10,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "map.width": 16,
+    "openFiles": [
+        "level1.tmx",
+        "tilesheet.tsx"
+    ],
+    "project": "phaser.tiled-project",
+    "recentFiles": [
+        "level1.tmx",
+        "public/level1.json",
+        "level1.json",
+        "level2.tmx",
+        "tilesheet.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 64,
+        "width": 64
+    }
+}
