@@ -8,6 +8,10 @@ const config = {
   height: 600,
   type: Phaser.AUTO,
   scene: [PreloadScene, MenuScene, GameScene],
+  physics:{
+    default:'arcade',
+    arcade:{debug:true}
+  }
 };
 
 const game = new Phaser.Game(config);

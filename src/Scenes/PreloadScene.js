@@ -20,8 +20,13 @@ export default class PreloadScene extends Phaser.Scene {
     );
     this.load.image("sky", "https://labs.phaser.io/assets/skies/space3.png");
     console.log("preload scene first");
+
+    //add 
+    this.load.image("star", "img/star.png");
+    this.load.image("back", "img/back.png");
+    this.load.image("popup", "img/grey_panel.png");
   }
   create() {
-    this.scene.start("menu");
+    this.scene.start("game");
   }
 }

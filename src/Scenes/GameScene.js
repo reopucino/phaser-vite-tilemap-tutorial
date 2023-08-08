@@ -34,6 +34,15 @@ export default class GameScene extends Phaser.Scene {
     //create player objects
     this.players = otherlevel.createFromObjects("player", { key: "player" }, false);
 
+    this.players.forEach(obj=>{
+      //console.log(obj);
+      //console.log(this);
+      this.physics.add.existing(obj);
+    })
+    //this.physics.add.existing(this.players[0]);
+    //this.physics.add.
+    
+
     this.input.keyboard.on("keydown-RIGHT", () => {
       console.log("move right");
       this.movePlayers(1, 0);
@@ -50,12 +59,27 @@ export default class GameScene extends Phaser.Scene {
       console.log("move down");
       this.movePlayers(0, 1);
     })
+
+
+    let obj = this.physics.add.image(64*8, 64*4, 'vite');//.setOrigin(0);
+    this.physics.add.overlap(obj, this.players, ()=>{
+      console.log("WIN");
+      obj.body.enable=false;
+      this.gameComplete()
+    })
   }
 
   movePlayers(x, y) {
+    if(this.state == "wingame")return;
     this.players.forEach(obj => {
       obj.x += x * 64;
       obj.y += y * 64;
     })
+  }
+
+  gameComplete(){
+    this.add.image(this.game.config.width*.5, this.game.config.height*.5, 'popup').setScale(5);
+    this.state = "wingame";
+    //this.input.
   }
 }
